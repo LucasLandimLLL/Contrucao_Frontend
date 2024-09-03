@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="tabelaContato.html">voltar</a>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Cadastro de Usuário</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            </div>
+            <div class="form-group">
+                <label>Sexo:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+                    <label class="form-check-label" for="masculino">Masculino</label>
+                </div><br/>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino">
+                    <label class="form-check-label" for="feminino">Feminino</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF:</label>
+                <select class="form-control" id="uf">
+                    <option>Selecione</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                    <option>MG</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Hobbies:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="futebol" value="futebol">
+                    <label class="form-check-label" for="futebol">Futebol</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="esportes" value="esportes">
+                    <label class="form-check-label" for="esportes">Esportes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="viagens" value="viagens">
+                    <label class="form-check-label" for="viagens">Viagens</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="musica" value="musica">
+                    <label class="form-check-label" for="musica">Música</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cinema" value="cinema">
+                    <label class="form-check-label" for="cinema">Cinema</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="literatura" value="literatura">
+                    <label class="form-check-label" for="literatura">Literatura</label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary">Voltar</button>
+            <button type="reset" class="btn btn-warning">Limpar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>
