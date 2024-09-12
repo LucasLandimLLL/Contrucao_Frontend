@@ -15,9 +15,10 @@ export default function BarraNavegacao() {
         <Nav className="me-auto">
           
         <NavDropdown title="mais informações" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/filmes">filmes</NavDropdown.Item>
+            <NavDropdown.Item href="/filmes">filmes Populares</NavDropdown.Item>
             <NavDropdown.Item href="/filmes/top">top filmes</NavDropdown.Item>
             <NavDropdown.Item href="/filmes/cartaz">Filmes em cartaz</NavDropdown.Item>
+            <NavDropdown.Item href="/filmes/lancamentos">lançamentos</NavDropdown.Item>
           </NavDropdown>
 
           <Nav.Link href="/">Home</Nav.Link>

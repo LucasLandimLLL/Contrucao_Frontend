@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
 import { Button, Card,CardFooter,Col, Row } from 'react-bootstrap'
-import apiFilmes from '../apis/apifilmes'
-import Pagina from '../components/Pagina'
+import apiFilmes from '../../apis/apifilmes'
+import Pagina from '../../components/Pagina'
 
 export default function page() {
 
@@ -16,7 +16,7 @@ export default function page() {
   }, []) 
 
   async function buscarFilmes(){
-    const resultado = await apiFilmes.get("/movie/popular?language=pt-BR")
+    const resultado = await apiFilmes.get("/movie/now_playing?language=pt-BR")
     console.log(resultado.data.results)
     const filmesRecebidos = resultado.data.results
     setFilmes(filmesRecebidos)
@@ -24,7 +24,7 @@ export default function page() {
   }
 
   return (
-    <Pagina titulo="Filmes">
+    <Pagina titulo="Em Cartaz">
       <Row md={4}>
         {filmes.map(filmes => {
           return (

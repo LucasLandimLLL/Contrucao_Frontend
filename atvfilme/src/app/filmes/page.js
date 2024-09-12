@@ -24,7 +24,7 @@ export default function page() {
   }
 
   return (
-    <Pagina titulo="Filmes">
+    <Pagina titulo="Filmes Populares">
       <Row md={4}>
         {filmes.map(filmes => {
           return (

@@ -16,7 +16,7 @@ export default function page() {
   }, []) 
 
   async function buscarFilmes(){
-    const resultado = await apiFilmes.get("/movie/top_rated?language=pt-BR")
+    const resultado = await apiFilmes.get("/movie/upcoming?language=pt-BR")
     console.log(resultado.data.results)
     const filmesRecebidos = resultado.data.results
     setFilmes(filmesRecebidos)
@@ -24,7 +24,7 @@ export default function page() {
   }
 
   return (
-    <Pagina titulo="Melhores avaliados">
+    <Pagina titulo="Lançamentos">
       <Row md={4}>
         {filmes.map(filmes => {
           return (
